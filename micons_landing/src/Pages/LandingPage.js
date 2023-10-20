@@ -5,6 +5,7 @@ import AboutUs from "../Components/AboutUs/AboutUs";
 import Services from "../Components/Services/Services";
 import Projects from "../Components/Projects/Projects";
 import Teams from "../Components/Teams/Teams";
+import ContactUs from "../Components/ContactUs/ContactUs";
 
 const LandingPage = () => {
 
@@ -18,6 +19,7 @@ const LandingPage = () => {
                     <Services />
                     <Projects />
                     <Teams />
+                    <ContactUs />
                 </div>
             </div>
         </div>

@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #999999;
 }
 
 p {
@@ -52,7 +53,7 @@ p {
 }
 
 .content-wrapper {
-  height: 100vh;
+  height: 100%;
 }
 
 .sec-space {
@@ -165,10 +166,19 @@ p {
   top: 0;
 }
 
+.header.scrolled {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 0px #d8d1d1;
+}
+.header.scrolled .menu li .link {
+  color: #222222;
+}
+
 /* Home */
 .home-wrap {
   position: relative;
-  height: 100%;
+  height: 100vh;
 }
 .home-wrap .video-banner {
   position: absolute;
@@ -266,6 +276,19 @@ p {
 .proj-wrap .gallery-sec .pos-rel:hover .overlay {
   opacity: 1;
 }
+.proj-wrap .proj-txt {
+  text-align: left;
+  padding-top: 50px;
+}
+.proj-wrap .proj-txt h4 {
+  margin-bottom: 35px;
+}
+.proj-wrap .proj-txt .card {
+  border: 0;
+  box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-left: 7px solid #00B7ED;
+}
 
 .team-wrap .react-multi-carousel-track,
 .team-wrap .team-caros.react-multi-carousel-list {
@@ -316,6 +339,9 @@ p {
   text-align: left;
 }
 
+.service-wrap .make-box {
+  padding-bottom: 100px;
+}
 .service-wrap .make-box .make-bg {
   background-image: url(../images/serviceBg.jpg);
   background-size: 100% 100%;
@@ -336,9 +362,6 @@ p {
 }
 .service-wrap .make-box .make-bg .col-md-10.m-auto {
   width: 90%;
-}
-.service-wrap .make-box .make-bg .pos-box.aos-init.aos-animate {
-  width: 20%;
 }
 .service-wrap .make-box .make-bg .card-body li {
   color: #999999;
@@ -363,32 +386,35 @@ p {
   border-radius: 0;
 }
 .service-wrap .make-box .card img {
-  width: 300px;
+  width: 100%;
   height: 217px;
 }
 .service-wrap .make-box .card-grp {
   position: absolute;
-  width: 300px;
   transition: all 0.9s ease-in-out;
   height: 500px;
   background: #fff;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .service-wrap .make-box .card-grp:hover {
   transform: scale(1.1);
   box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.1);
 }
 .service-wrap .make-box .g1 {
-  top: 300px;
+  top: 210px;
   height: 550px;
 }
 .service-wrap .make-box .g2 {
-  top: 228px;
+  top: 140px;
 }
 .service-wrap .make-box .g3 {
-  top: 162px;
+  top: 70px;
 }
 .service-wrap .make-box .g4 {
-  top: 110px;
+  top: 0;
 }
 
 .collab-wrap .heading-title,
@@ -397,10 +423,109 @@ p {
   margin-bottom: 50px;
 }
 
+.con-wrap .con-sec {
+  display: grid;
+  grid-template-columns: 3fr 5fr 3fr 3fr 3fr;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.con-wrap .con-box {
+  text-align: center;
+  padding: 0 21px;
+}
+.con-wrap .con-box img {
+  height: 40px;
+  margin-bottom: 23px;
+}
+.con-wrap .con-box h4 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 10px;
+  color: #222222;
+}
+.con-wrap .con-box p {
+  text-align: center;
+}
+.con-wrap .foot-sec {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 2rem;
+}
+.con-wrap .foot-sec span {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  text-transform: capitalize;
+}
+.con-wrap .foot-sec .ico-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.con-wrap .foot-sec .ico-box img {
+  height: 15px;
+  padding-left: 23px;
+}
+
 /* Responsive */
 @media (max-width: 575px) {
   .video-react-video {
     width: 100%;
+  }
+  .home-wrap {
+    height: 100%;
+  }
+  .about-wrap.sec-space.bg-white {
+    padding-top: 50%;
+  }
+  .about-wrap .text-box .lft-box {
+    padding: 0 15px;
+  }
+  .visi-wrap .text-box .rit-box {
+    padding: 20px 15px;
+    padding-bottom: 0;
+  }
+  .icons {
+    margin-bottom: 20px;
+  }
+  .icon-title {
+    margin-bottom: 35px;
+  }
+  .team-wrap .team-box {
+    display: block;
+    width: 100%;
+  }
+  .service-wrap .make-box .card-grp {
+    position: unset;
+    margin-top: 40px;
+    height: auto;
+  }
+  .service-wrap .make-box .g1 {
+    height: auto;
+  }
+  .service-wrap .make-box .make-bg {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .proj-wrap .proj-txt .card {
+    margin-bottom: 30px;
+  }
+  .con-wrap .con-sec {
+    display: block;
+  }
+  .con-wrap .con-box {
+    margin-bottom: 30px;
+  }
+  .con-wrap .foot-sec {
+    text-align: center;
+  }
+  .con-wrap .foot-sec .row {
+    flex-direction: column-reverse;
+  }
+  .con-wrap .foot-sec .ico-box {
+    justify-content: center;
+    margin-bottom: 23px;
   }
 }
 @media (min-width: 993px) {
@@ -447,9 +572,68 @@ p {
     display: block;
     opacity: 1;
   }
+  .header.scrolled .menu li .link {
+    color: #ffffff;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .side-menu:checked ~ nav {
     max-height: 100%;
+  }
+  .home-wrap {
+    height: 100%;
+  }
+  .about-wrap.sec-space.bg-white {
+    padding-top: 50%;
+  }
+  .about-wrap .text-box .lft-box {
+    padding: 0 15px;
+  }
+  .visi-wrap .text-box .rit-box {
+    padding: 20px 15px;
+    padding-bottom: 0;
+  }
+  .icons {
+    margin-bottom: 20px;
+  }
+  .icon-title {
+    margin-bottom: 35px;
+  }
+  .team-wrap .team-box {
+    display: block;
+    width: 100%;
+  }
+  .service-wrap .make-box .card-grp {
+    position: unset;
+    margin-top: 40px;
+  }
+  .service-wrap .make-box .make-bg {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .proj-wrap .proj-txt .card {
+    height: 100%;
+  }
+  .con-wrap .con-sec {
+    display: block;
+  }
+  .con-wrap .con-box {
+    margin-bottom: 30px;
+  }
+  .con-wrap .foot-sec {
+    text-align: center;
+  }
+  .con-wrap .foot-sec .row {
+    flex-direction: column-reverse;
+  }
+  .con-wrap .foot-sec .ico-box {
+    justify-content: center;
+    margin-bottom: 23px;
+  }
+  .header .hamb {
+    display: none;
+  }
+  .header .menu li .link {
+    padding: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ import visionImg from "../../assets/images/vision.jpg";
 
 const AboutUs = () => {
     return (
-        <div>
+        <div id="about-us">
             <div className="about-wrap sec-space bg-white">
                 <div className="container">
                     <h1 className="heading-title">about us</h1>
@@ -25,7 +25,7 @@ const AboutUs = () => {
                                     work with only the best material and
                                     associates.</p>
                             </div>
-                            <div className="col-12 col-md-5">
+                            <div className="col-12 col-md-5" data-aos="fade-left" data-aos-duration="2000">
                                 <img className="abt-img" src={aboutImg} alt="aboutImage" />
                             </div>
                         </div>
@@ -37,7 +37,7 @@ const AboutUs = () => {
                     <h1 className="heading-title">our vision</h1>
                     <div className="text-box">
                         <div className="row mt-5">
-                            <div className="col-12 col-md-5">
+                            <div className="col-12 col-md-5" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
                                 <img className="abt-img w-100" src={visionImg} alt="aboutImage" />
                             </div>
                             <div className="col-12 col-md-7 rit-box">

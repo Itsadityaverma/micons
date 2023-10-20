@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import headLogo from '../../assets/images/logo.jpeg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 
 const Header = () => {
     const navigate = useNavigate();
+    const [isScrolled, setIsScrolled] = useState(false);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     return (
-        <div className="header">
+        <div className={isScrolled ? 'header scrolled' : 'header'}>
             <div className="container">
                 <div className="d-flex justify-content-between align-items-center">
                     <div className="logo-box">
@@ -21,22 +38,22 @@ const Header = () => {
                         <nav className="nav">
                             <ul className="menu">
                                 <li>
-                                    <Link to="/" className="link">Home</Link>
+                                    <AnchorLink href="#home" className="link">Home</AnchorLink>
                                 </li>
                                 <li>
-                                    <Link to="/about-us" className="link">About Us</Link>
+                                    <AnchorLink href="#about-us" className="link">About Us</AnchorLink>
                                 </li>
                                 <li>
-                                    <Link to="/services" className="link">Services</Link>
+                                    <AnchorLink href="#our-services" className="link">Services</AnchorLink>
                                 </li>
                                 <li>
-                                    <Link to="/projects" className="link">Projects</Link>
+                                    <AnchorLink href="#our-projects" className="link">Projects</AnchorLink>
                                 </li>
                                 <li>
-                                    <Link to="/teams" className="link">Teams</Link>
+                                    <AnchorLink href="#our-teams" className="link">Teams</AnchorLink>
                                 </li>
                                 <li>
-                                    <Link to="/contact-us" className="link">Contact Us</Link>
+                                    <AnchorLink href="#contact-us" className="link">Contact Us</AnchorLink>
                                 </li>
                             </ul>
                         </nav>
