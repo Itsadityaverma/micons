@@ -23,9 +23,6 @@ const ContactUs = () => {
                                         Pincode - 248001
                                     </p>
                                 </div>
-                            </div>
-                            <div className="con-box">
-                                <img src={homeImg} alt="address" />
                                 <div className="">
                                     <h4>Address 2</h4>
                                     <p>Haridwar office- SFH/04, World Bank Colony,
@@ -34,25 +31,42 @@ const ContactUs = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="con-box">
-                                <img src={phoneImg} alt="phone" />
-                                <div>
-                                    <h4>Phone</h4>
-                                    <p className="mb-1">Achintya Mishra : <br />
-                                        <a href="tel:8920676368">8920676368</a>
-                                        <br />
-                                        <a href="tel:9997479054">9997479054</a>
+                            {/* <div className="con-box d-none">
+                                <img src={homeImg} alt="address" />
+                                <div className="">
+                                    <h4>Address 2</h4>
+                                    <p>Haridwar office- SFH/04, World Bank Colony,
+                                        Singhdwar,  Haridwar,  Uttarakhand
+                                        Pincode - 248404
                                     </p>
                                 </div>
+                            </div> */}
+                            <div className="con-box pl35">
+                                <img src={phoneImg} alt="phone" />
+                                <div>
+                                    <div>
+                                        <h4>Phone 1</h4>
+                                        <p className="mb-4">Achintya Mishra : <br />
+                                            <a href="tel:8920676368">8920676368</a>
+                                            <br />
+                                            <a href="tel:9997479054">9997479054</a>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h4>Phone 2</h4>
+                                        <p>Deepak Raj Jindal : <br />
+                                        <a href="tel:7417386006">7417386006</a></p>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="con-box">
+                            {/* <div className="con-box d-none">
                                 <img src={phoneImg} alt="phone" />
                                 <div>
                                     <h4>Phone</h4>
                                     <p>Deepak Raj Jindal : <a href="tel:7417386006">7417386006</a></p>
                                 </div>
-                            </div>
-                            <div className="con-box">
+                            </div> */}
+                            <div className="con-box pl28">
                                 <img src={emailImg} alt="email" />
                                 <div>
                                     <h4>Email</h4>

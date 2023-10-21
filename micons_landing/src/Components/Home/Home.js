@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Player, ControlBar } from 'video-react';
-import banrVideo from "../../assets/video/sampleVideo.mp4";
+import banrVideo from "../../assets/video/MICONS.mp4";
 
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
         <div id="home">
             <div className="home-wrap">
                 <div className="video-banner">
-                    <Player autoPlay muted loop src={banrVideo}>
+                    <Player className="mi-video"  autoPlay muted loop src={banrVideo}>
                         <ControlBar autoHide={true} disableDefaultControls={true} />
                     </Player>
                 </div>
