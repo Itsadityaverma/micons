@@ -51,12 +51,8 @@ const Projects = () => {
             title: "Building 1"
         },
         {
-            url: buildings2,
-            title: "Building 2"
-        },
-        {
             url: buildings3,
-            title: "Building 3"
+            title: "Building 2"
         }
     ]
     const openLightbox = (index) => {
