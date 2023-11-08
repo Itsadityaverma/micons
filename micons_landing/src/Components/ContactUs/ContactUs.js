@@ -47,15 +47,15 @@ const ContactUs = () => {
                                     <div>
                                         <h4>Phone 1</h4>
                                         <p className="mb-4">Achintya Mishra : <br />
-                                            <a href="tel:8920676368">8920676368</a>
+                                            <a href="tel:8920676368">+91 8920676368</a>
                                             <br />
-                                            <a href="tel:9997479054">9997479054</a>
+                                            <a href="tel:9997479054">+91 9997479054</a>
                                         </p>
                                     </div>
                                     <div>
                                         <h4>Phone 2</h4>
                                         <p>Deepak Raj Jindal : <br />
-                                        <a href="tel:7417386006">7417386006</a></p>
+                                        <a href="tel:7417386006">+91 7417386006</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@ const ContactUs = () => {
                                             </a>
                                         </div>
                                         <div>
-                                            <a href="https://api.whatsapp.com/send?phone=919997479054&text=Hi%20Achintya" target="_blank">
+                                            <a href="https://wa.link/f1m2hh" target="_blank">
                                                 <img src={whatsappImg} alt="whatsapp" />
                                             </a>
                                         </div>

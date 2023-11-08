@@ -23,7 +23,7 @@ const LandingPage = () => {
                     <ContactUs />
                     <div className="app-btn">
                         <h3>Any Query ?</h3>
-                        <a href="https://api.whatsapp.com/send?phone=919997479054&text=Hi%20Achintya" target="_blank">
+                        <a href="https://wa.link/f1m2hh" target="_blank">
                             <img src={whatsappBtn} alt="whatsapp icon" />
                         </a>
                     </div>

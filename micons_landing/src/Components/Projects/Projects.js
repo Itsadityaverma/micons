@@ -112,8 +112,8 @@ const Projects = () => {
                                             <p>Renovation in Rajpur Road Enclave, Dehradun</p>
                                             <h5>Key Features</h5>
                                             <p>Interior Design, Fabrication Work, Modular Kitchen</p>
-                                            <h5>Project Value</h5>
-                                            <p>Rs. 5,45,000 - Rs. 7,00,000</p>
+                                            {/* <h5>Project Value</h5>
+                                            <p>Rs. 5,45,000 - Rs. 7,00,000</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -124,8 +124,8 @@ const Projects = () => {
                                             <p>Construction of SDBC Road at HarilokPhase 2, Haridwar</p>
                                             <h5>Key Features</h5>
                                             <p>200 mm thick WBM Road</p>
-                                            <h5>Project Value</h5>
-                                            <p>Rs. 7,50,000</p>
+                                            {/* <h5>Project Value</h5>
+                                            <p>Rs. 7,50,000</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -141,8 +141,8 @@ const Projects = () => {
                                             <p>Design and Built project at Raipur greens</p>
                                             <h5>Key Features</h5>
                                             <p>3BHK in 2200sqft covered area</p>
-                                            <h5>Project Value</h5>
-                                            <p>Rs. 60,00,000</p>
+                                            {/* <h5>Project Value</h5>
+                                            <p>Rs. 60,00,000</p> */}
                                         </div>
                                     </div>
                                 </div>
@@ -153,8 +153,8 @@ const Projects = () => {
                                             <p>Construction of Vatsalya Vatika School, Bahadarabad</p>
                                             <h5>Key Features</h5>
                                             <p>Playground Design, Classroom Remodelling</p>
-                                            <h5>Project Value</h5>
-                                            <p>Rs. 10, 45, 000</p>
+                                            {/* <h5>Project Value</h5>
+                                            <p>Rs. 10, 45, 000</p> */}
                                         </div>
                                     </div>
                                 </div>
